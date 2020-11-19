@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>
         Keti's Portfolio Website
     </title>
-  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Structure for welcome view -->
     <div class = "welcomeView">
         <div class="container">
@@ -155,27 +151,57 @@
 
     <!-- Medium article slider -->
     <div class = "mediumSlider">
-        <div class="container">
+        <div class="container slider-header">
             <h4>Medium articles</h4>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23pt" height="23pt" viewBox="0 0 23 23" version="1.1">
+                    <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 10.144531 22.441406 C 9.394531 21.691406 9.394531 20.476562 10.144531 19.730469 L 16.457031 13.417969 L 1.914062 13.417969 C 0.855469 13.417969 0 12.558594 0 11.5 C 0 10.441406 0.855469 9.582031 1.914062 9.582031 L 16.453125 9.582031 L 10.144531 3.273438 C 9.421875 2.519531 9.4375 1.328125 10.171875 0.589844 C 10.910156 -0.144531 12.101562 -0.160156 12.855469 0.5625 L 22.441406 10.144531 L 22.472656 10.179688 L 22.503906 10.210938 L 22.523438 10.234375 L 22.558594 10.269531 L 22.566406 10.28125 L 22.589844 10.308594 L 22.589844 10.316406 L 22.613281 10.347656 L 22.632812 10.375 L 22.65625 10.40625 L 22.65625 10.414062 L 22.675781 10.445312 L 22.675781 10.457031 L 22.691406 10.484375 L 22.699219 10.496094 L 22.710938 10.519531 L 22.734375 10.558594 L 22.75 10.585938 L 22.75 10.597656 L 22.765625 10.632812 C 23.136719 11.382812 22.976562 12.285156 22.371094 12.863281 L 12.855469 22.441406 C 12.105469 23.1875 10.894531 23.1875 10.144531 22.441406 Z M 10.144531 22.441406 "/>
+                    </g>
+                </svg>  
+            </div>
+            <div class="swiper-button-next">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23pt" height="23pt" viewBox="0 0 23 23" version="1.1">
+                    <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 10.144531 22.441406 C 9.394531 21.691406 9.394531 20.476562 10.144531 19.730469 L 16.457031 13.417969 L 1.914062 13.417969 C 0.855469 13.417969 0 12.558594 0 11.5 C 0 10.441406 0.855469 9.582031 1.914062 9.582031 L 16.453125 9.582031 L 10.144531 3.273438 C 9.421875 2.519531 9.4375 1.328125 10.171875 0.589844 C 10.910156 -0.144531 12.101562 -0.160156 12.855469 0.5625 L 22.441406 10.144531 L 22.472656 10.179688 L 22.503906 10.210938 L 22.523438 10.234375 L 22.558594 10.269531 L 22.566406 10.28125 L 22.589844 10.308594 L 22.589844 10.316406 L 22.613281 10.347656 L 22.632812 10.375 L 22.65625 10.40625 L 22.65625 10.414062 L 22.675781 10.445312 L 22.675781 10.457031 L 22.691406 10.484375 L 22.699219 10.496094 L 22.710938 10.519531 L 22.734375 10.558594 L 22.75 10.585938 L 22.75 10.597656 L 22.765625 10.632812 C 23.136719 11.382812 22.976562 12.285156 22.371094 12.863281 L 12.855469 22.441406 C 12.105469 23.1875 10.894531 23.1875 10.144531 22.441406 Z M 10.144531 22.441406 "/>
+                    </g>
+                </svg>
+            </div>
         </div>
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+                <a href="https://uxdesign.cc/usability-of-road-signs-345d2cc7524a" class="swiper-slide">
+                    <div class="thumbnail" style="background-image: url('https://miro.medium.com/max/700/1*re3ASTJiFTDP4FOejyeI8Q.png');"></div>
+                    <h4 class="thumbnail-txt">Medium Blog</h4>
+                </a>
+                <div class="swiper-slide">
+                    <div class="thumbnail" style="background-image: url('https://miro.medium.com/max/700/1*re3ASTJiFTDP4FOejyeI8Q.png');"></div>
+                    <h4 class="thumbnail-txt">Medium Blog</h4>
+                </div>
+                <div class="swiper-slide">
+                    <div class="thumbnail" style="background-image: url('https://miro.medium.com/max/700/1*re3ASTJiFTDP4FOejyeI8Q.png');"></div>
+                    <h4 class="thumbnail-txt">Medium Blog</h4>
+                </div>
+                <div class="swiper-slide">
+                    <div class="thumbnail" style="background-image: url('https://miro.medium.com/max/700/1*re3ASTJiFTDP4FOejyeI8Q.png');"></div>
+                    <h4 class="thumbnail-txt">Medium Blog</h4>
+                </div>
+                <div class="swiper-slide">
+                    <div class="thumbnail" style="background-image: url('https://miro.medium.com/max/700/1*re3ASTJiFTDP4FOejyeI8Q.png');"></div>
+                    <h4 class="thumbnail-txt">Medium Blog</h4>
+                </div>
+                <div class="swiper-slide">
+                    <div class="thumbnail" style="background-image: url('https://miro.medium.com/max/700/1*re3ASTJiFTDP4FOejyeI8Q.png');"></div>
+                    <h4 class="thumbnail-txt">Medium Blog</h4>
+                </div>
+                <div class="swiper-slide">
+                    <div class="thumbnail" style="background-image: url('https://miro.medium.com/max/700/1*re3ASTJiFTDP4FOejyeI8Q.png');"></div>
+                    <h4 class="thumbnail-txt">Medium Blog</h4>
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
     </div>
 
@@ -191,7 +217,6 @@
                     <div class="swiper-slide">Slide 1</div>
                     <div class="swiper-slide">Slide 2</div>
                     <div class="swiper-slide">Slide 3</div>
-                    ...
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -200,8 +225,6 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
             </div>
     </div>
 
@@ -222,6 +245,7 @@
         </div>
     </div>
     
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

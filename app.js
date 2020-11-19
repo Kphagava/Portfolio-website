@@ -12,9 +12,10 @@ let textArrayIndex = 0;
 let charIndex = 0;
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
-
+  slidesPerView: 3,
+  spaceBetween: 30,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -24,11 +25,6 @@ var mySwiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
 })
 
