@@ -315,3 +315,19 @@ h4.thumbnail-txt{
 .thumbnail-cert-label{
     color: #2B2B2B;
 }
+
+/* Mobile */
+@media(max-width: 1000px){
+    .experienceBlock:nth-of-type(n) .container {
+        flex-direction: column-reverse;
+    }
+    .experienceBlock:nth-of-type(2n) .container {
+        flex-direction: column;
+    }
+    .experienceBlock .exp-cont{
+        max-width: 85%;
+    }
+    .experienceBlock .exp-img{
+        
+    }
+}
