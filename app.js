@@ -10,7 +10,7 @@ const newTextDelay = 2000;
 const isTyping = false;
 let textArrayIndex = 0;
 let charIndex = 0;
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper-blog', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -23,10 +23,28 @@ var mySwiper = new Swiper('.swiper-container', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-blog',
+    prevEl: '.swiper-button-prev-blog',
   },
 })
+
+var mySwiperCert = new Swiper('.swiper-cert', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next-cert',
+      prevEl: '.swiper-button-prev-cert',
+    },
+  })
 
 arrowBtn.addEventListener('click', () => {
     window.scrollBy({

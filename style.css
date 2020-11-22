@@ -285,4 +285,33 @@ p.landing-text{
 }
 h4.thumbnail-txt{
     font-size: 18px;
+    color: #2B2B2B;
+}
+
+.thumbnail-cert{
+    background-color: #FAFAFA;
+    padding: 22px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbnail-cert img{
+    width: 185px;
+    height: 66px;
+}
+
+.cert-arrow-icon{
+    fill: #DD5C28;
+}
+
+.thumbnail-cert-from{
+    color: #4B4B4B;
+    font-family: 'Montserrat';
+    font-weight: regular;
+}
+
+.thumbnail-cert-label{
+    color: #2B2B2B;
 }
