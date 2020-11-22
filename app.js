@@ -10,11 +10,13 @@ const newTextDelay = 2000;
 const isTyping = false;
 let textArrayIndex = 0;
 let charIndex = 0;
+let slidePerView = 3;
+
 var mySwiper = new Swiper('.swiper-blog', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: slidePerView,
   spaceBetween: 30,
   // If we need pagination
   pagination: {
@@ -32,7 +34,7 @@ var mySwiperCert = new Swiper('.swiper-cert', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: slidePerView,
     spaceBetween: 30,
     // If we need pagination
     pagination: {
