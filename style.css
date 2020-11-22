@@ -338,4 +338,8 @@ h4.thumbnail-txt{
         height: auto;
         margin-bottom: 30px;
     }
+    p.landing-text{
+        max-width: 100%;
+        font-size: 28px;
+    }
 }
