@@ -10,12 +10,20 @@ const newTextDelay = 2000;
 const isTyping = false;
 let textArrayIndex = 0;
 let charIndex = 0;
-let slidePerView = 3;
+
+let slidePerViewWeb = 3;
+let slidePerViewMobile = 1;
+let mobileBreakpoint = 1000;
 
 var mySwiper = new Swiper('.swiper-blog', {
   // Optional parameters
   direction: 'horizontal',
-  slidesPerView: slidePerView,
+  slidesPerView: slidePerViewMobile,
+    breakpoints: {
+      1000: {
+        slidesPerView: slidePerViewWeb
+      }
+    },
   spaceBetween: 30,
   // If we need pagination
   pagination: {
@@ -32,7 +40,12 @@ var mySwiper = new Swiper('.swiper-blog', {
 var mySwiperCert = new Swiper('.swiper-cert', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: slidePerView,
+    slidesPerView: slidePerViewMobile,
+    breakpoints: {
+      1000: {
+        slidesPerView: slidePerViewWeb
+      }
+    },
     spaceBetween: 30,
     // If we need pagination
     pagination: {
