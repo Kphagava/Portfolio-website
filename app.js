@@ -15,7 +15,6 @@ let slidePerView = 3;
 var mySwiper = new Swiper('.swiper-blog', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
   slidesPerView: slidePerView,
   spaceBetween: 30,
   // If we need pagination
@@ -33,7 +32,6 @@ var mySwiper = new Swiper('.swiper-blog', {
 var mySwiperCert = new Swiper('.swiper-cert', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
     slidesPerView: slidePerView,
     spaceBetween: 30,
     // If we need pagination

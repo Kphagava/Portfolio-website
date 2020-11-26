@@ -272,6 +272,9 @@ p.landing-text{
 .swiper-button-prev:hover svg, .swiper-button-next:hover svg{
     fill:  #dd5b28da;
 }
+.swiper-button-next.swiper-button-disabled svg, .swiper-button-prev.swiper-button-disabled svg{
+    fill: #AAAAAA;
+}
 .swiper-slide{
     flex-wrap: wrap;
     justify-content: left;
@@ -314,6 +317,15 @@ h4.thumbnail-txt{
 
 .thumbnail-cert-label{
     color: #2B2B2B;
+}
+
+h4.thumbnail-cert-label{
+    font-size: 18px;
+}
+
+h5.thumbnail-cert-from{
+    font-size: 16px;
+    font-weight: 200;
 }
 
 /* Mobile */
