@@ -61,6 +61,14 @@ a{
 a:hover{
     cursor: pointer;
 }
+a.disabled{
+    color: #AAAAAA;
+    pointer-events: none;
+    cursor: default;
+}
+a.disabled svg{
+    fill: #AAAAAA;
+}
 
 /* Utilities */
 .landing-main-font{
@@ -337,13 +345,13 @@ h5.thumbnail-cert-from{
         flex-direction: column;
     }
     .experienceBlock .exp-cont{
-        max-width: 85%;
+        max-width: 100%;
     }
     .experienceBlock a{
         font-size: 24px;
     }
     .exp-image{
-        width: 90%;
+        width: 100%;
     }
     .exp-image img{
         width: 100%;
@@ -353,5 +361,37 @@ h5.thumbnail-cert-from{
     p.landing-text{
         max-width: 100%;
         font-size: 28px;
+    }
+    .job-title{
+        margin-top: 56px;
+    }
+    p.landing-text{
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+    a.landing-btn{
+        display: flex;
+    }
+
+    .scrollArrow img{
+        height: 83px;
+        width: 53px;
+    }
+    .exp-cont .links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+    .exp-cont a{
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .scrollArrow{
+        transform: translateX(-50%) translateY(-30%);
+    }
+    .swiper-slide .thumbnail-cert-from, .swiper-slide .thumbnail-cert-label{
+        width: 100%;
+        text-align: left;
     }
 }
