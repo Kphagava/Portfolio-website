@@ -338,6 +338,7 @@ h5.thumbnail-cert-from{
 
 /* Mobile */
 @media(max-width: 1000px){
+    
     .experienceBlock:nth-of-type(n) .container {
         flex-direction: column-reverse;
     }
