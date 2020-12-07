@@ -163,9 +163,11 @@ p.landing-text{
     font-size: 14px;
     line-height: 20px;
     color: #454545;
+    margin-top: 16px;
     margin-bottom: 16px;
 }
 .experienceBlock a {
+    margin-top: 16px;
     margin-right: 16px;
 }
 
