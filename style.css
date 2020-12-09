@@ -295,12 +295,13 @@ p.landing-text{
     width: 100%;
     height: 200px;
     background-size: cover;
-
+    background-position: center;
     margin-bottom: 20px;
 }
 h4.thumbnail-txt{
     font-size: 18px;
     color: #2B2B2B;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .thumbnail-cert{
@@ -329,6 +330,12 @@ h4.thumbnail-txt{
 
 .thumbnail-cert-label{
     color: #2B2B2B;
+}
+
+h4.thumbnail-cert-label, h5.thumbnail-cert-from{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    text-align: left;
 }
 
 h4.thumbnail-cert-label{
