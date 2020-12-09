@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'Futura';
-    src: url('Futura-Bold.woff2') format('woff2'),
-        url('Futura-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Futura Bold';
+    src: url('./assets/fonts/futura-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/futura-bold-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -72,7 +71,10 @@ a.disabled svg{
 
 /* Utilities */
 .landing-main-font{
-    font-family: Futura;
+    font-family: 'Futura bold';
+}
+.animated-text{
+    font-family: 'Futura bold';
 }
 h1.landing-main-font{
     font-size: 80px;
