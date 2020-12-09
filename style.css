@@ -349,7 +349,15 @@ h5.thumbnail-cert-from{
 
 /* Mobile */
 @media(max-width: 1000px){
-    
+    .scrollArrow{
+        display: none;
+    }
+    h1.landing-main-font{
+        font-size: 56px;
+    }
+    .animated-text{
+        font-size: 32px;
+    }
     .experienceBlock:nth-of-type(n) .container {
         flex-direction: column-reverse;
     }
