@@ -19,8 +19,11 @@
     <link rel="icon" type="image/svg" href="./assets/favicon.svg"/>
     <link rel="icon" type="image/svg" href="https://kphagava.me/assets/favicon.svg"/>
     
-    <link rel="stylesheet" rel="canonical" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"></noscript>
+    <!-- <link rel="stylesheet" rel="canonical" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="style.css"></noscript>
+    <!-- <link rel="stylesheet"  type="text/css" href="style.css"> -->
 </head>
 <body>
     <!-- Structure for welcome view -->
@@ -275,7 +278,7 @@
 
         gtag('config', 'UA-179937214-1');
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="app.js"></script>
 </body>
 </html>

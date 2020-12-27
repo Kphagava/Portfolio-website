@@ -2,6 +2,7 @@
     font-family: 'Futura Bold';
     src: url('./assets/fonts/futura-bold-webfont.woff2') format('woff2'),
          url('./assets/fonts/futura-bold-webfont.woff') format('woff');
+    font-display: swap;
     font-weight: normal;
     font-style: normal;
 }
@@ -314,7 +315,7 @@ h4.thumbnail-txt{
 }
 
 .thumbnail-cert img{
-    width: 185px;
+    width: 177px;
     height: 66px;
 }
 
