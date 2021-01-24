@@ -157,7 +157,8 @@ nav.active{
     background-color: red;
 }
 
-.page-container .item .item-details .item-status{
+.page-container .item .item-details .item-status,
+.page-container .item .item-details .item-school{
     color: #8E8E8E;
     font-size: 16px;
     font-weight: 700;
@@ -176,6 +177,7 @@ nav.active{
     font-weight: 400;
     color: #2B2B2B;
     margin-bottom: 40px;
+    max-width: 600px;
 }
 
 .page-container .item .item-details .item-actions{
@@ -241,6 +243,9 @@ nav.active{
     .page-container .item .item-details .item-actions .action{  
         width: 180px;
         margin-right: 40px;
+    }
+    .page-container .item .item-details .item-header{
+        margin-bottom: 42px;
     }
 }
 /* Page utilities END */
