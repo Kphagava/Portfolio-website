@@ -29,7 +29,13 @@
 
     <!-- Start of Header -->
     <header>
-        <div class="breadcrumb"></div>
+        <div class="breadcrumb">
+            <a href="/index.html" class="prev">
+                HOME
+                <img src="./assets/breadcrumb-arrow.svg" alt="">
+            </a>
+            <span class="curr">ARTICLES</span>
+        </div>
 
         <button class="burger-menu">
             <svg viewBox="0 0 64 48">
@@ -40,9 +46,9 @@
         </button>
 
         <nav class="sidenav">
-            <a href="/index.html" class="active">HOME</a>
+            <a href="/index.html">HOME</a>
             <a href="/work.html">UI/UX WORK</a>
-            <a href="/certificates.html">CERTIFICATES</a>
+            <a href="/certificates.html" class="active">CERTIFICATES</a>
             <a href="/articles.html">ARTICLES</a>
         </nav>
         <div class="sidenav-overlay"></div>

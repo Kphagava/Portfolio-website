@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="732" height="877" viewBox="0 0 732 877">
+  <defs>
+    <filter id="Rounded_Rectangle_14" x="0" y="0" width="732" height="877" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.915" dy="3.441" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feFlood flood-color="#042558" flood-opacity="0.361"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rounded_Rectangle_14-2" x="0" y="0" width="732" height="877" filterUnits="userSpaceOnUse">
+      <feOffset dx="4.915" dy="3.441" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="9" result="blur-2"/>
+      <feFlood flood-color="#042558" flood-opacity="0.361"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rounded_Rectangle_14)">
+        <rect id="Rounded_Rectangle_14-3" data-name="Rounded Rectangle 14" width="678" height="823" rx="15" transform="translate(623 532)" fill="#fff"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="Rounded_Rectangle_14-4" data-name="Rounded Rectangle 14" transform="translate(-600.915 -508.441)">
+    <g transform="matrix(1, 0, 0, 1, 600.91, 508.44)" filter="url(#Rounded_Rectangle_14-2)">
+      <rect id="Rounded_Rectangle_14-5" data-name="Rounded Rectangle 14" width="678" height="823" rx="15" transform="translate(22.09 23.56)" fill="#fff"/>
+    </g>
+    <g id="Clip" clip-path="url(#clip-path)">
+      <path id="Shape_3" data-name="Shape 3" d="M1301,604l-72-72h72Z" fill="#bfe3ff"/>
+    </g>
+  </g>
+</svg>
