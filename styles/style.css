@@ -24,6 +24,9 @@ a{
     outline: none;
     text-decoration: none;
 }
+body{
+    position: relative;
+}
 
 /* Header START*/
 header{
@@ -249,3 +252,16 @@ nav.active{
     }
 }
 /* Page utilities END */
+
+.progress-ring{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.progress-ring__circle {
+    transition: 0.35s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+  
