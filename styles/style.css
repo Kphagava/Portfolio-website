@@ -11,6 +11,413 @@
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #454545;
+    position: relative;
+}
+.animated-cont{
+    display: flex;
+    height: 53px;
+    margin-bottom: 20px;
+}
+.animated-cont h3{
+    display: flex;
+    align-items: center;
+}
+.animated-text{
+    font-family: Futura;
+    font-size: 40px;
+    color: #2B2B2B;
+}
+.cursor {
+    display: inline-block;
+    width: 4px;
+    height: 40px;
+    margin-left: 4px;
+    background-color: #2B2B2B ;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { background-color: #2b2b2b;}
+    49% { background-color: #2b2b2b;}
+    50% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% {background-color: #2b2b2b;}
+}
+a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #DD5C28;
+    font-size: 16px;
+    font-weight: bold;
+}
+a:hover{
+    cursor: pointer;
+}
+a.disabled{
+    color: #AAAAAA;
+    pointer-events: none;
+    cursor: default;
+}
+a.disabled svg{
+    fill: #AAAAAA;
+}
+
+/* Utilities */
+.landing-main-font{
+    font-family: 'Futura bold';
+}
+.animated-text{
+    font-family: 'Futura bold';
+}
+h1.landing-main-font{
+    font-size: 80px;
+    margin-bottom: 10px;
+    color: #2B2B2B;
+}
+
+
+.color-primary{
+    color: #DD5C28;
+}
+.job-title{
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;;
+}
+p.landing-text{
+    max-width: 540px;
+    margin-bottom: 40px;
+}
+
+/* First view styling */
+.container{
+    width: 85%;
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+}
+.welcomeView{
+    display: flex;
+}
+.welcome-content{
+    margin-top: -20px;
+}
+.welcomeView .container, .goodbyeView .container{
+    flex-direction: column;
+}
+.experienceBlock .container {
+    align-items: center;
+}
+.btn-primary{
+    font-size: 14px;
+    height: 52px;
+    padding-left: 28px;
+    padding-right: 28px;
+    color: white;
+    background-color: #DD5C28;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.btn-primary svg{
+    margin-left: 16px;
+}
+
+.scrollArrow{
+    position: absolute;
+    top: 85vh;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 3;
+}
+/* experience part styling */
+.experienceBlock{
+    display: flex;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.experienceBlock svg{
+    margin-left: 8px;
+    fill: #DD5C28
+}
+.experienceBlock h4 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;;
+    color: #2B2B2B;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.experienceBlock h6 {
+    font-size: 16px;
+    color: #8E8E8E;
+}
+.experienceBlock p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #454545;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.experienceBlock a {
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.experienceBlock:nth-of-type(2n-1){
+    background-color: #FAFAFA;
+}
+.experienceBlock .container {
+    justify-content: space-between;
+}
+.exp-cont{
+    max-width: 380px;
+}
+.mediumSlider {
+    background-color: #FAFAFA;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.mediumSlider h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+.swiper-container {
+    width: 85%;
+    max-width: 1120px;
+    height: 280px;
+}
+.swiper-slide{
+    width: 300px;
+    height: 200px;
+}
+.certificateSlider {
+    background-color: #ffffff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.certificateSlider h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+/* goodbye view styling*/
+.goodbyeView{
+    height: 100vh;
+    display: flex;
+    background-color: #FAFAFA;
+}
+.goodbyeView svg{
+    margin-left: 20px;
+    fill: #DD5C28;
+}
+.goodbyeView h2 {
+    font-size: 40px;
+    color: #2B2B2B;
+    margin-top: 16px;
+}
+.goodbyeView p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.goodbyeView .container {
+    align-items: center;
+    text-align: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.slider-header{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.slider-header .swiper-button-prev{
+    left: auto;
+    right: 0;
+    transform: translateX(-200%) rotateZ(180deg);
+}
+.swiper-button-prev, .swiper-button-next{
+    display: inline-flex;
+    align-items: center;
+}
+.swiper-button-prev:focus, .swiper-button-next:focus{
+    outline: none;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    display: none;
+}
+.swiper-button-prev svg, .swiper-button-next svg{
+    fill: #DD5C28;
+}
+.swiper-button-prev:hover svg, .swiper-button-next:hover svg{
+    fill:  #dd5b28da;
+}
+.swiper-button-next.swiper-button-disabled svg, .swiper-button-prev.swiper-button-disabled svg{
+    fill: #AAAAAA;
+}
+.swiper-slide{
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.thumbnail{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+h4.thumbnail-txt{
+    font-size: 18px;
+    color: #2B2B2B;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.thumbnail-cert{
+    background-color: #FAFAFA;
+    padding: 22px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbnail-cert img{
+    width: 177px;
+    height: 66px;
+}
+
+.cert-arrow-icon{
+    fill: #DD5C28;
+}
+
+.thumbnail-cert-from{
+    color: #4B4B4B;
+    font-family: 'Montserrat';
+    font-weight: regular;
+}
+
+.thumbnail-cert-label{
+    color: #2B2B2B;
+}
+
+h4.thumbnail-cert-label, h5.thumbnail-cert-from{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    text-align: left;
+}
+
+h4.thumbnail-cert-label{
+    font-size: 18px;
+}
+
+h5.thumbnail-cert-from{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/* Mobile */
+@media(max-width: 1000px){
+    .scrollArrow{
+        display: none;
+    }
+    h1.landing-main-font{
+        font-size: 56px;
+    }
+    .animated-text{
+        font-size: 32px;
+    }
+    .experienceBlock:nth-of-type(n) .container {
+        flex-direction: column-reverse;
+    }
+    .experienceBlock:nth-of-type(2n) .container {
+        flex-direction: column;
+    }
+    .experienceBlock .exp-cont{
+        max-width: 100%;
+    }
+    .experienceBlock a{
+        font-size: 24px;
+    }
+    .exp-image{
+        width: 100%;
+    }
+    .exp-image img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    p.landing-text{
+        max-width: 100%;
+        font-size: 28px;
+    }
+    .job-title{
+        margin-top: 56px;
+    }
+    p.landing-text{
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+    a.landing-btn{
+        display: flex;
+    }
+
+    .scrollArrow img{
+        height: 83px;
+        width: 53px;
+    }
+    .exp-cont .links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+    .exp-cont a{
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .scrollArrow{
+        transform: translateX(-50%) translateY(-30%);
+    }
+    .swiper-slide .thumbnail-cert-from, .swiper-slide .thumbnail-cert-label{
+        width: 100%;
+        text-align: left;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 *::before, *::after{
@@ -275,4 +682,10 @@ nav.active{
 
 .progress-ring .a{
     transform: translateX(22px) translateY(36px) rotateZ(-90deg);
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
