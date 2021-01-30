@@ -689,3 +689,74 @@ nav.active{
     flex-direction: column;
     height: 100%;
 }
+
+.articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.articles .article-container{
+    width: 45%;
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+.articles .article-container img{
+    width: 200px;
+    height: 140px;
+    margin-right: 18px;
+}
+
+.articles .article-container .details{
+    position: relative;
+}
+
+.articles .article-container .details .title{
+    color: #232323;
+    font-family: 'Futura Bold';
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.articles .article-container .details .intro{
+    color: #454545;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.articles .article-container .details .read-article-btn a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    color: #848C92;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.articles .article-container .details .read-article-btn a svg{
+    margin-left: 16px;
+}
+
+@media(max-width: 600px){
+    .articles .article-container{
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .articles .article-container img{
+        width: 110px;
+        height: 80px;
+        margin-right: 18px;
+    }
+}
