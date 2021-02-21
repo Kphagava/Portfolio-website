@@ -2,9 +2,13 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 import styles from './navbar.module.css'
+import { useRouter } from 'next/router'
 
 
 const Navbar = () => {
+
+    const router = useRouter()
+    const currentPath = router.pathname.substr(1);
 
     const [burgerMenuState, setBurgerMenuState] = useState(false);
 
@@ -16,7 +20,17 @@ const Navbar = () => {
     return (
         <header className={styles.header}>
             <div className={styles.breadcrumb}>
-                
+                {   
+                    currentPath !== '' ?
+                    <Link href="/">
+                        <a className={styles.prev}>
+                            HOME
+                            <img src="icons/breadcrumb-arrow.svg" alt=""/>
+                        </a>
+                    </Link>
+                    : ''
+                }
+                <span className={styles.curr}>{currentPath}</span>
             </div>
 
             <button 
