@@ -59,3 +59,113 @@
 .burgerMenu.active svg path:nth-child(3) {
     --offset: 58px;
 }
+
+.header{
+    width: 100%;
+    padding: 32px 24px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    font-family: 'Futura Bold';
+}
+
+.header .burgerMenu{
+    z-index: 5;
+}
+
+.nav, .sidenavOverlay{
+    position: absolute;
+}
+
+.sidenav, .sidenavOverlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.sidenavOverlay {
+    background-color: #707070;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.sidenav a {
+    width: 100%;
+    margin-bottom: 48px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a.active{
+    color: #DD5C28;
+}
+
+.sidenav a:hover {
+    color: #dd5b28c4;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+nav.active, .sidenavOverlay.active{
+    width: 100%;
+}
+
+nav.active{
+    padding: 0 80px;
+}
+
+.breadcrumb{
+    font-size: 20px;
+}
+
+.breadcrumb .prev{
+    color: #848C92;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb .prev img{
+    margin-left: 16px;
+    margin-right: 8 px;
+}
+
+.breadcrumb .curr{
+    color: #2B2B2B;
+}
+
+@media(min-width: 764px){
+    .header{
+        padding: 42px 100px;
+        margin-bottom: 58px;
+    }
+    .nav.active{
+        width: 500px;
+    }
+    .breadcrumb .prev{
+        display: inline-flex;
+    }
+}
+/* Header END */
