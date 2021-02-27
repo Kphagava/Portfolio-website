@@ -156,6 +156,14 @@ nav.active{
     color: #2B2B2B;
 }
 
+.nav a{
+    color: #2B2B2B;
+}
+
+.nav a:hover, a.active{
+    color: #DD5C28;
+}
+
 @media(min-width: 764px){
     .header{
         padding: 42px 100px;

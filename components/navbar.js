@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
-
-import styles from './navbar.module.css'
 import { useRouter } from 'next/router'
+
+import ActiveLink from './activeLink';
+import styles from './navbar.module.css'
 
 
 const Navbar = () => {
@@ -43,20 +44,27 @@ const Navbar = () => {
                     <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
                 </svg>
             </button>
-
+            
+            <style jsx>
+            {`
+                a.active{
+                    color: #DD5C28;
+                }
+            `}
+            </style>
             <nav className={ burgerMenuState ? [styles.sidenav, styles.nav, styles.active].join(' ') : [styles.sidenav, styles.nav].join(' ')}>
-                <Link href="/">
+                <ActiveLink activeClassName="active" href="/">
                     <a>Home</a>
-                </Link>
-                <Link href="/work">
+                </ActiveLink>
+                <ActiveLink activeClassName="active" href="/work">
                     <a>Work</a>
-                </Link>
-                <Link href="/certificates">
+                </ActiveLink>
+                <ActiveLink activeClassName="active" href="/certificates">
                     <a>Certificates</a>
-                </Link>
-                <Link href="/articles">
+                </ActiveLink>
+                <ActiveLink activeClassName="active" href="/articles">
                     <a>Articles</a>
-                </Link>
+                </ActiveLink>
             </nav>
             <div className={ burgerMenuState ? [styles.sidenavOverlay, styles.active].join(' '): styles.sidenavOverlay}></div>
         </header>
