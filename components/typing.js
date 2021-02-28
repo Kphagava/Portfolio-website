@@ -12,10 +12,10 @@ class Typing extends React.Component {
     };
     this.typed = new Typed(this.el, options);
   }
-componentWillUnmount() {
+  componentWillUnmount() {
     this.typed.destroy();
   }
-  
+
   render() {
     return (
       <>
