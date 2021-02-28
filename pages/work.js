@@ -1,5 +1,5 @@
 import styles from '../styles/work-cert.module.css'
-import Link from 'next/link'
+import Image from 'next/image'
 
 const Work = () => {
 
@@ -17,7 +17,7 @@ const Work = () => {
             name: 'Adjarabet.com',
             desc: 'I was developing Wireframes and prototypes around customer and business needs, working closely with marketing team to ensure right and suitable visuals and specifications for Promo pages, communicating designs to development team and working with them to produce competitive and engaging products for Adjarabet.com users. Working in a promotional team involved creating Ux flows, UI and graphic design assets and also currently used design system.',
             status: 'Work done for',
-            imgUrl: 'adjara.png',
+            imgUrl: 'adjarabet.png',
             websiteUrl: 'https://google.com',
             articleUrl: 'https://google.com'
         },
@@ -42,7 +42,13 @@ const Work = () => {
             {works.map(item => {
                 return (
                     <div className={styles.item} key={item.id}>
-                        <div className={styles.itemThumbnail}></div>
+                        <div className={styles.itemThumbnail}>
+                            <Image
+                                src={["/images/work/",item.imgUrl].join("")}
+                                objectFit="contain"
+                                layout="fill"
+                            />
+                        </div>
                         <div className={styles.itemDetails}>
                             <div className={styles.itemStatus}>{item.status}</div>
                             <div className={styles.itemHeader}>{item.name}</div>

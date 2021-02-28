@@ -1,4 +1,5 @@
 import styles from '../styles/work-cert.module.css'
+import Image from 'next/image'
 
 const Certificates = () => {
 
@@ -8,14 +9,14 @@ const Certificates = () => {
             name: 'Mobile UX design',
             desc: 'Design mobile interfaces based on mobile usability best practices, use personas and task modelling to inform the design of a mobile user experience. Design mobile interfaces that cater to the different operating platforms (e.g. iOS vs Android), design mobile user experiences that are engaging and fun.',
             from: 'Interaction design foundation',
-            imgUrl: 'mobileUxDesign.png'
+            imgUrl: 'mobileUX.jpg'
         },
         {
             id: 1,
             name: 'Service design',
             desc: 'Run a service design process from start to finish, apply essential service design methods such as service blueprints, business model canvases and value propositions. Set up a service design team and engage the entire organization in service design.',
             from: 'Interaction design foundation',
-            imgUrl: 'serviceDesign.png'
+            imgUrl: 'serviceDesign.jpg'
         },
         {
             id: 2,
@@ -30,8 +31,14 @@ const Certificates = () => {
         <div>
             {certificates.map(item => {
                 return(
-                    <div className={styles.item}>
-                        <div className={styles.itemThumbnail}></div>
+                    <div className={styles.item} key={item.id}>
+                        <div className={styles.itemThumbnail}>
+                            <Image
+                                src={["/images/certificates/",item.imgUrl].join("")}
+                                objectFit="contain"
+                                layout="fill"
+                            />
+                        </div>
                         <div className={styles.itemDetails}>
                             <div className={styles.itemSchool}>{item.from}</div>
                             <div className={styles.itemHeader}>{item.name}</div>
