@@ -45,3 +45,108 @@ a.disabled{
 a.disabled svg{
   fill: #AAAAAA;
 }
+
+.welcomeView{
+  display: flex;
+}
+.welcomeContent{
+  margin-top: -20px;
+}
+.welcomeView .container{
+  flex-direction: column;
+}
+.btnPrimary{
+  font-size: 14px;
+  height: 52px;
+  padding-left: 28px;
+  padding-right: 28px;
+  color: white;
+  background-color: #DD5C28;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.btnPrimary svg{
+  margin-left: 16px;
+}
+.colorPrimary{
+  color: #DD5C28;
+}
+.jobTitle{
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;;
+}
+p.landingText{
+  max-width: 540px;
+  margin-bottom: 40px;
+}
+.animatedCont{
+  display: flex;
+  height: 53px;
+  margin-bottom: 20px;
+}
+.animatedCont h3{
+  display: flex;
+  align-items: center;
+}
+.animatedText{
+  font-family: Futura;
+  font-size: 40px;
+  color: #2B2B2B;
+}
+.cursor {
+  display: inline-block;
+  width: 4px;
+  height: 40px;
+  margin-left: 4px;
+  background-color: #2B2B2B ;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { background-color: #2b2b2b;}
+  49% { background-color: #2b2b2b;}
+  50% {background-color: transparent;}
+  99% {background-color: transparent;}
+  100% {background-color: #2b2b2b;}
+}
+
+/* Mobile */
+@media(max-width: 1000px){
+  h1.landingMainFont{
+    font-size: 56px;
+  }
+  .animatedText{
+    font-size: 32px;
+  }
+  .jobTitle{
+    margin-top: 56px;
+  }
+  p.landingText{
+    max-width: 100%;
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+  a.landingBtn{
+    display: flex;
+  }
+}
+.landing{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Utilities */
+.landing-main-font{
+  font-family: 'Futura bold';
+}
+.animated-text{
+  font-family: 'Futura bold';
+}
+h1.landing-main-font{
+  font-size: 80px;
+  margin-bottom: 10px;
+  color: #2B2B2B;
+}
