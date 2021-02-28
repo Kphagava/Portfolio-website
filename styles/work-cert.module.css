@@ -57,11 +57,32 @@
     margin-left: 34px;
 }
 
-.action-to-article{
+.action{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #DD5C28;
+    font-size: 16px;
+    font-weight: bold;
+}
+.action:hover{
+    cursor: pointer;
+}
+.action.disabled{
+    color: #AAAAAA;
+    pointer-events: none;
+    cursor: default;
+}
+.action.disabled svg{
+    fill: #AAAAAA;
+}
+
+.actionToArticle{
     background-color: #848C92;
 }
 
-.action-to-website{
+.actionToWebsite{
     background-color: #2B2B2B;
 }
 
